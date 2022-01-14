@@ -6,12 +6,23 @@
   display: flex;
   justify-content: center;
 }
+.header {
+  padding: 10px;
+  height: 50px;
+  background-color: #acacac;
+}
+.img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
 .container {
   width: 400px;
   height: 100vh;
   border: 1px red solid;
   position: relative;
 }
+
 .inputarea {
   width: 100%;
   position: absolute;
@@ -25,6 +36,8 @@
   padding: 0.3rem;
   background-color: #fff;
   border: 0.1rem solid gray;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 .btn {
   width: 50px;
@@ -33,4 +46,6 @@
   background-color: darkcyan;
   color: #fff;
   font-weight: 700;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
