@@ -10,8 +10,9 @@
 .container {
   width: 400px;
   height: 100vh;
-  border: 1px red solid;
+  border: 1px rgb(226, 226, 217) solid;
   position: relative;
+  overflow-y: hidden;
 }
 .header {
   padding: 10px;

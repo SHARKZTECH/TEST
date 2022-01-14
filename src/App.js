@@ -5,15 +5,21 @@ import Messages from "./components/Messages";
 import { useState } from "react";
 
 export default function App() {
-  const [message, setMessage] = useState([]);
+  const [messages, setMessages] = useState([]);
   const getMessage = (message) => {
-    alert(message);
+    setMessages([
+      ...messages,
+      {
+        name: "sh",
+        msg: message
+      }
+    ]);
   };
   return (
     <div className="app">
       <div className="container">
         <Header />
-        <Messages />
+        <Messages messages={messages} />
         <InputArea getMessage={getMessage} />
       </div>
     </div>
