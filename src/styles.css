@@ -5,22 +5,27 @@
 .app {
   display: flex;
   justify-content: center;
-}
-.header {
-  padding: 10px;
-  height: 50px;
-  background-color: #acacac;
-}
-.img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
+  align-items: center;
 }
 .container {
   width: 400px;
   height: 100vh;
   border: 1px red solid;
   position: relative;
+}
+.header {
+  padding: 10px;
+  height: 50px;
+  background-color: hsla(50, 33%, 25%, 0.75);
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 2px;
 }
 
 .inputarea {
@@ -48,4 +53,24 @@
   font-weight: 700;
   border-bottom-right-radius: 1rem;
   border-top-right-radius: 1rem;
+}
+
+/* Messages */
+.msgs {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.msg {
+  background-color: gray;
+  width: 45%;
+  padding: 0.2rem 0.5rem;
+  margin: 5px;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+.right {
+  align-self: flex-end;
+  background-color: rgb(110, 119, 100);
 }

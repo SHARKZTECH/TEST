@@ -1,10 +1,12 @@
 import { useState } from "react";
 
-const InputArea = () => {
+const InputArea = ({ getMessage }) => {
   const [msg, setMsg] = useState("");
 
   const submitHandler = (e) => {
     e.preventDefault();
+    getMessage(msg);
+    setMsg("");
   };
   return (
     <div className="inputarea">
