@@ -1,4 +1,36 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+}
+.app {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 400px;
+  height: 100vh;
+  border: 1px red solid;
+  position: relative;
+}
+.inputarea {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 5px;
+}
+.input {
+  outline: none;
+  width: calc(100% - 80px);
+  height: 20px;
+  padding: 0.3rem;
+  background-color: #fff;
+  border: 0.1rem solid gray;
+}
+.btn {
+  width: 50px;
+  height: 35px;
+  border: none;
+  background-color: darkcyan;
+  color: #fff;
+  font-weight: 700;
 }
